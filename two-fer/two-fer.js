@@ -3,10 +3,11 @@
 // convenience to get you started writing code faster.
 //
 
-const twoFer = (name) => {
+export const twoFer = (name) => {
   let massage;
-  name.length > 0
+  name === true
     ? (massage = `One for ${name},one for me.`)
     : (massage = "One for you, one for me.");
   return massage;
 };
+
