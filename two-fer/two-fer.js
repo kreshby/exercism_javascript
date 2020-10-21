@@ -3,6 +3,13 @@
 // convenience to get you started writing code faster.
 //
 
-export const twoFer = () => {
-  throw new Error("Remove this statement and implement this function");
+export const twoFer = (name) => {
+
+  const massage;
+  name.length > 0 ?
+  massage = `One for${name},one for me.`
+  :
+  massage = 'One for you, one for me.';
+  return massage;
+  
 };
