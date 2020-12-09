@@ -6,7 +6,7 @@
 export const twoFer = (name) => {
   let massage;
   name === true
-    ? (massage = `One for ${name},one for me.`)
+    ? (massage = `One for ${name}, one for me.`)
     : (massage = "One for you, one for me.");
   return massage;
 };
