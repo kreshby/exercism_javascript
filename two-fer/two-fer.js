@@ -3,7 +3,7 @@
 // convenience to get you started writing code faster.
 //
 
-const twoFer = (name) => {
+export const twoFer = (name) => {
   let massage;
 
   if (typeof name === "string" && name.trim()) {
