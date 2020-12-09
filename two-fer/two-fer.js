@@ -3,11 +3,13 @@
 // convenience to get you started writing code faster.
 //
 
-export const twoFer = (name) => {
+const twoFer = (name) => {
   let massage;
-  name === true
-    ? (massage = `One for ${name}, one for me.`)
-    : (massage = "One for you, one for me.");
+
+  if (typeof name === "string" && name.trim()) {
+    massage = `One for ${name.trim()}, one for me.`;
+  } else {
+    massage = "One for you, one for me.";
+  }
   return massage;
 };
-
