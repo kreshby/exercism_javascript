@@ -4,9 +4,6 @@
 //
 
 export const twoFer = (name = "you") => {
-  let massage;
-
-  massage = `One for ${name}, one for me.`;
-
-  return massage;
+  
+  return `One for ${name}, one for me.`;
 };
