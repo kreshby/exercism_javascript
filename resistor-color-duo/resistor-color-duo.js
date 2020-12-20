@@ -12,10 +12,10 @@ export const decodedValue = (nameColor1, nameColor2) => {
     let firstDigitNumber = COLORS.indexOf(nameColor1);
   }
   if (0 <= nameColor2 && nameColor2 <= 9) {
-    let secondDigitNumber = COLORS.indexOf(nameColor2);
+    let secondDigitNumber = String(COLORS.indexOf(nameColor2));
   }
 
-  twoDigitNumber = firstDigitNumber + secondDigitNumber;
+  twoDigitNumber = String(firstDigitNumber + secondDigitNumber);
 
   return twoDigitNumber;
 };
