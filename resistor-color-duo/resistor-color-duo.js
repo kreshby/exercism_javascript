@@ -3,6 +3,30 @@
 // convenience to get you started writing code faster.
 //
 
-export const decodedValue = () => {
-  throw new Error('Remove this statement and implement this function');
+export const decodedValue = (nameColor1, nameColor2) => {
+  //throw new Error('Remove this statement and implement this function');
+  let twoDigitNumber;
+  if (0 <= nameColor1 && nameColor1 <= 9) {
+    let firstDigitNumber = COLORS.indexOf(nameColor1);
+  }
+  if (0 <= nameColor2 && nameColor2 <= 9) {
+    let secondDigitNumber = COLORS.indexOf(nameColor2);
+  }
+
+  woDigitNumber = firstDigitNumber + secondDigitNumber;
+
+  return woDigitNumber;
 };
+
+export const COLORS = [
+  "black",
+  "brown",
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "blue",
+  "violet",
+  "grey",
+  "white",
+];
