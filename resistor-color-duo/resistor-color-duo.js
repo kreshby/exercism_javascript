@@ -6,6 +6,8 @@
 export const decodedValue = (nameColor1, nameColor2) => {
   //throw new Error('Remove this statement and implement this function');
   let twoDigitNumber;
+  let firstDigitNumber;
+  let secondDigitNumber;
   if (0 <= nameColor1 && nameColor1 <= 9) {
     let firstDigitNumber = COLORS.indexOf(nameColor1);
   }
@@ -13,9 +15,9 @@ export const decodedValue = (nameColor1, nameColor2) => {
     let secondDigitNumber = COLORS.indexOf(nameColor2);
   }
 
-  woDigitNumber = firstDigitNumber + secondDigitNumber;
+  twoDigitNumber = firstDigitNumber + secondDigitNumber;
 
-  return woDigitNumber;
+  return twoDigitNumber;
 };
 
 export const COLORS = [
