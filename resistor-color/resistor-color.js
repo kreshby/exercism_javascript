@@ -3,11 +3,20 @@
 // convenience to get you started writing code faster.
 //
 
-export const colorCode = (numericIndex) => {
+export const colorCode = (nameColor) => {
   //throw new Error('Remove this statement and implement this function');
-  return colorResistor[numericIndex].toLowerCase();
+  return COLORS.indexOf(nameColor);
 };
 
-export const COLORS = undefined;
-const colorResistor = ['Black','Brown','Red','Orange','Yellow','Green','Blue','Violet','Grey','White'];
-
+export const COLORS = [
+  "black",
+  "brown",
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "blue",
+  "violet",
+  "grey",
+  "white",
+];
