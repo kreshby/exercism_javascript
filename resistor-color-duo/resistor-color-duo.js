@@ -5,25 +5,30 @@
 "use strict";
 var twoDigitNumber;
 export const decodedValue = (nameColor) => {
-  let firstDigitNumber;
-  let secondDigitNumber;
+  let result;
+  console.log(nameColor[0], nameColor[1]);
+
+  result = takeIndex(nameColor);
+
+  return result.join("");
+};
+function takeIndex(twoColors) {
   let nameColorOne;
   let nameColorTwo;
+  let firstDigitNumber;
+  let secondDigitNumber;
 
-  nameColorOne = String(nameColor[0]).toLowerCase();
-  nameColorTwo = String(nameColor[1]).toLowerCase();
+  nameColorOne = String(twoColors[0]).toLowerCase();
+  nameColorTwo = String(twoColors[1]).toLowerCase();
 
   if (COLORS.includes(nameColorOne, 0) && COLORS.includes(nameColorTwo, 0)) {
     firstDigitNumber = COLORS.indexOf(nameColorOne);
 
     secondDigitNumber = COLORS.indexOf(nameColorTwo);
-
-    twoDigitNumber = String(firstDigitNumber) + String(secondDigitNumber);
-
-    return Number(twoDigitNumber);
   }
-};
 
+  return [firstDigitNumber, secondDigitNumber];
+}
 export const COLORS = [
   "black",
   "brown",
