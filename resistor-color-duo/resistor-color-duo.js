@@ -10,7 +10,7 @@ export const decodedValue = (nameColor) => {
 
   result = takeIndex(nameColor);
 
-  return result.join("");
+  return Number(result.join(""));
 };
 function takeIndex(twoColors) {
   let nameColorOne;
